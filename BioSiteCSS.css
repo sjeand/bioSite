@@ -28,14 +28,14 @@ h3{
 }
 
 .hero-image{
-    background-image:(C:\Users\Baptiste\Desktop\web-200\Biosite\images);
+    background-image:url(C:\Users\Baptiste\Desktop\web-200\Biosite\images);
     height: 500px;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-size: cover;
-    position: relative;
-    margin: 0px 35px 0px 35px;
+    position:relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("https://scontent.ffar1-2.fna.fbcdn.net/v/t1.0-9/128672236_10160244822728238_2779705157796705991_o.jpg?_nc_cat=100&ccb=2&_nc_sid=730e14&_nc_ohc=tneNkJghMLIAX_3Uv7e&_nc_ht=scontent.ffar1-2.fna&oh=d5d7786851b451fff68f54366eb0e6ae&oe=5FEB0618");
+    margin-top:-60px;
 }
 
 .hero-text{
@@ -49,20 +49,22 @@ h3{
 }
 
 nav{
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.4);
     height:60px;
     margin:0px;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Crimson Text', serif;
-    font-weight: 600;
+    font-weight: 500;
     overflow: hidden;
     position: sticky;
     top: 00px;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 li{
     list-style-type: none;
-    width: 346px;
+    width: 300px;
     padding: 20px;
     margin: -20px;
     float: left;
@@ -70,28 +72,55 @@ li{
 
 li a{
     text-decoration: none;
-    color: black;
+    color: white;
     line-height: 20px;
     display: block;
     text-align: center;
     text-transform: uppercase;
     margin: 5px 5px 5px 5px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 li:hover{
     background-color: white;
 }
 
+li a:hover{
+    color:black;
+}
+
+nav.black{
+    background-color:white;
+    height:60px;
+    margin:0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav.black li a{
+    color:black;
+}
+
+nav.black li a:hover{
+    color:white;
+}
+nav.black li:hover{
+    background-color:#00293d;
+}
+
 h4{
-    margin: 120px 35px -20px 35px;
+    margin: 120px 0px -20px 0px;
 }
 
 h5{
-    margin: 35px 35px -20px 35px;
+    margin: 35px 0px -20px 0px;
 }
 
-h4, h5{
+h6{
+    margin:35px 0px 20px 0px;
+
+}
+
+h4, h5, h6{
     font-family: 'Cormorant', serif;
     color:white;
     font-size: 40px;
@@ -100,19 +129,46 @@ h4, h5{
     font-weight: 300;
 }
 
-p {
+p.childhood{
     font-family: 'Crimson Text', serif;
     font-size: 20px;
     background-color:white;
     padding: 40px;
-    margin: 20px;
+    margin: 20px 10px 20px 10px;
     line-height: 1.5;
     font-weight: normal;
     text-align: center;
 }
 
+p.current{
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    background-color:white;
+    line-height: 1.5;
+    font-weight: normal;
+    text-align: center;
+    width: 550px;
+    height: 300;
+    float: right;
+    margin: 20px 20px 20px 625px;
+    padding: 8px;
+}
+
+p.culture{
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    background-color:white;
+    margin: 20px 25px 20px 25px;
+    line-height: 1.5;
+    font-weight: normal;
+    text-align: center;
+    padding: 40px;
+    height: 220px;
+    width: 1125px;
+}
+
 body{
-    background-image: linear-gradient(to left,#040f14, #00293d);
+    background-image: linear-gradient(to left,#040f14 30%, #00293d, #4b7488 150%);
 }
 
 .wrapper {
@@ -125,9 +181,9 @@ body{
 .nested{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin: 16px;
-    background-color: #040f14;
+    grid-gap: 15px;
+    margin: 20px 10px 20px 10px;
+    background-color: #040f14 .1;
     
 }
 
@@ -135,15 +191,24 @@ body{
     display: grid;
     grid-template-columns: 35% 65% ;
     grid-gap: 10px;
-    margin: 25px;
+    margin: 20px 10px 20px 10px;
 }
 
 .gallery {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin: 20px 10px 20px 20px;
+    background-color: #040f14 .1;
+}
+
+.grid{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin: 16px; 
-    background-color: #00293d;
+    grid-gap: 15px;
+    margin: -320px 20px 20px 20px;
+    background-color: #040f14 .1;
+    float: right;
 }
 
 footer{

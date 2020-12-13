@@ -26,26 +26,39 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
     
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript">
+            $(window).on('scroll', function(){
+                if($(window).scrollTop()){
+                    $('nav').addClass('black');
+                }
+                else
+                {
+                    $('nav').removeClass('black');
+                }
+            })
+        </script>
+
     </head>
    
     <body>
 
     <div id="page">
+   
+        <nav class="black">
+            <ul>
+                <li><a href="#top" class="#Home">Home</a></li>
+                <li><a href="#childhood" class="#childhood">Early Life</a></li>
+                <li><a href="#present" class="#present">Present Day</a></li>
+                <li><a href="#culture" class="#culture">Celebrating</a></li>
+                <li><a href="https://open.spotify.com/playlist/27E4L0qKbA44XtUPQ3zW4o?si=Lgpyj6Y5S4uOJs2ZRcYXBQ" class="#Music" target="_blank">Spotify Playlist </a></li>
+                <li><a href="https://www.google.com/maps/search/Carrefour+Haiti,+thiotte+Haiti/@18.8080825,-73.398632,372869m/data=!3m1!1e3" class="#map" target="_blank">Map of Haiti</a></li>
+            </ul>
+        </nav>
         
         <header>
         
         <div class= "hero-image"> 
-
-            <nav> 
-                <ul>
-                    <li><a href="#top" class="#Home">Home</a></li>
-                    <li><a href="#childhood" class="#childhood">Early Life</a></li>
-                    <li><a href="#present" class="#present">Present Day</a></li>
-                    <li><a href="https://open.spotify.com/playlist/27E4L0qKbA44XtUPQ3zW4o?si=Lgpyj6Y5S4uOJs2ZRcYXBQ" class="#Music" target="_blank">Spotify Playlist </a></li>
-                    <li><a href="https://www.google.com/maps/search/Carrefour+Haiti,+thiotte+Haiti/@18.8080825,-73.398632,372869m/data=!3m1!1e3" class="#map" target="_blank">Map of Haiti</a></li>
-                </ul>
-            
-            </nav>
 
             <div class= "hero-text">
 
@@ -60,7 +73,7 @@
     
 <main>
 
-    <div id="childhood">
+    <id="childhood">
 
             <div>
         
@@ -71,8 +84,8 @@
           
             <div class="wrapper">
 
-                <p>I was born in Carrefour, Haiti in 1989. Carrefour is located outside of the capital Port-Au-Price.  When I was four my Father took me to live in Thiotte a remote part of Haiti near the mountains. Here, I attended Catholic school walking 10 miles a day.  I grew up on a farm/ranch and helped grow coffee beans and tropical fruits. We also raised livestock. After I had finished elementary school, my Father moved to the United States to obtain his citizenship. I was sent back to Carrefour to live with my Auntie and cousins and to attend middle school. Unfortunately, this was a rough time in Haiti’s history. The Country faced unrest due to a controversial President: Jean-Bertrand Aristide. He was removed during a coup d'état, which translates literally to “overthrow” in 2004. This left the country divided and started a civil war. Carrefour was one of the worst areas in Haiti and the people who did not want to overthrow Jean-Bertrand were angry. During this time, No one was able to go to school or to work. The city was lit on fire and many people lost their lives. Jean-Bertrand was taking out of the country by U.S. military and later wrote a letter of resignation to prevent the spilling of more blood. A new president was elected, and the country began to heal. I went back to school and continued my education until I moved to the United States in 2007.<br><br>My favorite memory of Haiti is our Independence Day. Haiti was the first black republic country to win independence (year 1804) and the first country to abolish slavery in the western hemisphere from France. On January 1st we celebrate by making a traditional soup called – Soup Joumou, a soup that was forbidden to slaves before gaining their independence. A month later, Haiti celebrates with Kanaval (carnival), the biggest party of the year. People dress up in traditional Haitian clothing and in costumes and dance in the streets with parades and music. It is the epitome of Haitian Culture. </p>
-                <!--update paragraph, forgot Miami content-->
+                <p class="childhood">I was born in Carrefour, Haiti in 1989. Carrefour is located outside of the capital Port-Au-Price.  When I was four my Father took me to live in Thiotte a remote part of Haiti near the mountains. Here, I attended Catholic school walking 10 miles a day.  I grew up on a farm/ranch and helped grow coffee beans and tropical fruits. We also raised livestock. After I had finished elementary school, my Father moved to the United States to obtain his citizenship. I was sent back to Carrefour to live with my Auntie and cousins and to attend middle school. Unfortunately, this was a rough time in Haiti’s history. The Country faced unrest due to a controversial President: Jean-Bertrand Aristide. He was removed during a coup d'état, which translates literally to “overthrow” in 2004. This left the country divided and started a civil war. Carrefour was one of the worst areas in Haiti and the people who did not want to overthrow Jean-Bertrand were angry. During this time, No one was able to go to school or to work. The city was lit on fire and many people lost their lives. Jean-Bertrand was taking out of the country by U.S. military and later wrote a letter of resignation to prevent the spilling of more blood. A new president was elected, and the country began to heal. I went back to school and continued my education until I moved to the United States in 2007. <br> <br>I rejoined my Father in Miami, Florida and finished my senior year of high school in the States learning English as I went. I received a scholarship for soccer and earned a scholarship to a private university. Here I played and earned a bachelor's degree in criminal justice. Unfortunately, the economy in Florida made it hard to find a job, so I moved to North Dakota, where one of my Cousins that I grew up with in Haiti was already living.  </p>
+                
 
                 <div class="nested">
 
@@ -143,13 +156,38 @@
                 </div>
 
                 <p class="current">
-                    <br>I moved to North Dakota, with nothing but a suitcase. I stayed at my Cousins house as I looked for a job and started purchasing the essential. After settling into my new life, I was out at a sports bar with some friends. There was a huge UFC fight on, and the place was packed. The Waitress messed up my order and a year later we were married. Now, we have two cats and a perfect daughter. I am working as a Correctional Officer at the state prison and life couldn’t be more unexpected or any better.  
+                    <br>I moved to North Dakota, with nothing but a suitcase. I stayed at my Cousins house as I looked for a job and started purchasing the essential. After settling into my new life, I was out at a sports bar with some friends. There was a huge UFC fight on, and the place was packed.The Waitress messed up my order and a year later we were married. Now, we have two cats and a perfect daughter. I am working as a Correctional Officer at the state prison and life couldn’t be more unexpected or any better.  
                 </p>
-
+                
             </div>
+      
+        </div>
 
     </div>
+    
+    <div id="culture">
+        <h6> Celebrating</h6>
 
+        <p class="culture"> Haiti is a small country that shares an island in the Caribbean with Dominican Republic. Haiti has endured many heartaches but is still filled with pride and an amazing history. My favorite memory of Haiti is our Independence Day. Haiti was the first black republic country to win independence (in the year 1804) and the first country to abolish slavery in the western hemisphere from France. On January 1st we celebrate by making a traditional soup called – Soup Joumou, a soup that was forbidden to slaves before gaining their independence. A month later, Haiti celebrates with Kanaval (carnival), the biggest party of the year. People dress up in traditional Haitian clothing and in costumes and dance in the streets with parades and music. It is the epitome of Haitian Culture. <br><br> Please enjoy the Spotify playlist above. </p>
+    
+        <div class= grid>
+
+            <img src="https://scontent.ffar1-2.fna.fbcdn.net/v/t1.0-9/131354649_10160284340438238_3561149397723872624_o.jpg?_nc_cat=111&ccb=2&_nc_sid=730e14&_nc_ohc=83zacIk7Fb4AX_YsWAM&_nc_ht=scontent.ffar1-2.fna&oh=5e29932c9c706ab4100928aa3bb67a79&oe=5FFA686B"
+            class="soup"
+            alt="soup joumou"
+            width="300"
+            height="300"/> 
+
+            <img src="images/heather-suggitt-P8ZZ0aofrXI-unsplash.jpg"
+            class="houses"
+            alt="haitian houses"
+            width="300"
+            height="300"/> 
+
+        </div>
+
+    </div>
+    
     </div>
 
 </main>
@@ -161,3 +199,4 @@
     </body>
    
 </html>
+

@@ -100,12 +100,12 @@ nav.white li a{
     color:black;
 }
 
-nav.white li:hover{
+nav.white li a:hover{
     color:white;
 }
 
 nav.white li:hover{
-    background-color:#00293d;
+    background-color:#234c61;
 }
 
 h4{

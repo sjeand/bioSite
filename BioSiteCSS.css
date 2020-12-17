@@ -89,21 +89,22 @@ li a:hover{
     color:black;
 }
 
-nav.black{
+nav.white{
     background-color:white;
     height:60px;
     margin:0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-nav.black li a{
+nav.white li a{
     color:black;
 }
 
-nav.black li a:hover{
+nav.white li:hover{
     color:white;
 }
-nav.black li:hover{
+
+nav.white li:hover{
     background-color:#00293d;
 }
 

@@ -1,3 +1,4 @@
+/* Header and hero image styling*/
 
 h1{
     font-family: 'Big Shoulders Inline Text', cursive;
@@ -47,6 +48,8 @@ h3{
     color: black;
 
 }
+
+/* Navigation styling*/
 
 nav{
     background: rgba(255, 255, 255, 0.4);
@@ -108,6 +111,8 @@ nav.white li:hover{
     background-color:#234c61;
 }
 
+/* Header styling*/
+
 h4{
     margin: 120px 0px -20px 0px;
 }
@@ -129,6 +134,8 @@ h4, h5, h6{
     background-color:#040f14;
     font-weight: 300;
 }
+
+/* Paragraph styling */
 
 p.childhood{
     font-family: 'Crimson Text', serif;
@@ -167,10 +174,13 @@ p.culture{
     height: 220px;
     width: 1125px;
 }
+ /* Background*/
 
 body{
     background-image: linear-gradient(to left,#040f14 30%, #00293d, #4b7488 150%);
 }
+
+/* grid styling*/
 
 .wrapper {
     display: grid;
@@ -211,6 +221,8 @@ body{
     background-color: #040f14 .1;
     float: right;
 }
+
+/*footer styling*/
 
 footer{
     font-size: 14px;

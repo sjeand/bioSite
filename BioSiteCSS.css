@@ -29,14 +29,13 @@ h3{
 }
 
 .hero-image{
-    background-image:url(C:\Users\Baptiste\Desktop\web-200\Biosite\images);
+    background-image:url("images/hero_image.jpeg");
     height: 500px;
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
     position:relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("https://scontent.ffar1-2.fna.fbcdn.net/v/t1.0-9/128672236_10160244822728238_2779705157796705991_o.jpg?_nc_cat=100&ccb=2&_nc_sid=730e14&_nc_ohc=tneNkJghMLIAX_3Uv7e&_nc_ht=scontent.ffar1-2.fna&oh=d5d7786851b451fff68f54366eb0e6ae&oe=5FEB0618");
-    margin-top:-60px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("images/hero_image.jpeg");
 }
 
 .hero-text{
